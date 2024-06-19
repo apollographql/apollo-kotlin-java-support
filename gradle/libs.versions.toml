@@ -6,3 +6,5 @@ apollo = "4.0.0-beta.7"
 librarian = "com.gradleup.librarian:core:0.0.2"
 kgp = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin-plugin" }
 apollo-api-java = { group = "com.apollographql.apollo3", name = "apollo-api-java", version.ref = "apollo" }
+rx-java2 = "io.reactivex.rxjava2:rxjava:2.2.21"
+rx-java3 = "io.reactivex.rxjava3:rxjava:3.1.6"
