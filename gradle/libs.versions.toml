@@ -1,0 +1,8 @@
+[versions]
+kotlin-plugin = "2.0.0"
+apollo = "4.0.0-beta.7"
+
+[libraries]
+librarian = "com.gradleup.librarian:core:0.0.2"
+kgp = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin-plugin" }
+apollo-api-java = { group = "com.apollographql.apollo3", name = "apollo-api-java", version.ref = "apollo" }
