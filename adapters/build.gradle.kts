@@ -9,11 +9,11 @@ librarianModule()
 
 dependencies {
   api(libs.apollo.api)
-  api(libs.okhttp)
+  compileOnly(libs.guava.jre)
 }
 
 tasks.withType(Jar::class.java).configureEach {
   manifest {
-    attributes(mapOf("Automatic-Module-Name" to "com.apollographql.java.client"))
+    attributes(mapOf("Automatic-Module-Name" to "com.apollographql.java.adapters"))
   }
 }

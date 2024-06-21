@@ -12,7 +12,7 @@ import io.reactivex.annotations.CheckReturnValue;
 import io.reactivex.disposables.Disposable;
 import org.jetbrains.annotations.NotNull;
 
-import static com.apollographql.apollo3.api.java.Assertions.checkNotNull;
+import static com.apollographql.java.client.internal.Assertions.checkNotNull;
 
 public class Rx2Apollo {
   @NotNull

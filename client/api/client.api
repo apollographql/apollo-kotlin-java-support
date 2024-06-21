@@ -109,6 +109,11 @@ public class com/apollographql/java/client/interceptor/internal/DefaultIntercept
 	public fun proceed (Lcom/apollographql/apollo3/api/ApolloRequest;Lcom/apollographql/java/client/ApolloCallback;)V
 }
 
+public class com/apollographql/java/client/internal/Assertions {
+	public fun <init> ()V
+	public static fun checkNotNull (Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+}
+
 public class com/apollographql/java/client/internal/DefaultApolloCall : com/apollographql/java/client/ApolloCall {
 	public fun <init> (Lcom/apollographql/java/client/ApolloClient;Lcom/apollographql/apollo3/api/Operation;)V
 	public fun addExecutionContext (Lcom/apollographql/apollo3/api/ExecutionContext;)Lcom/apollographql/java/client/ApolloCall;

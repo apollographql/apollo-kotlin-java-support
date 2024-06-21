@@ -5,6 +5,8 @@ apollo = "4.0.0-beta.7"
 [libraries]
 librarian = "com.gradleup.librarian:core:0.0.3"
 kgp = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin-plugin" }
-apollo-api-java = { group = "com.apollographql.apollo3", name = "apollo-api-java", version.ref = "apollo" }
+apollo-api = { group = "com.apollographql.apollo3", name = "apollo-api", version.ref = "apollo" }
 rx-java2 = "io.reactivex.rxjava2:rxjava:2.2.21"
 rx-java3 = "io.reactivex.rxjava3:rxjava:3.1.6"
+guava-jre = "com.google.guava:guava:31.1-jre"
+okhttp = "com.squareup.okhttp3:okhttp:4.11.0"

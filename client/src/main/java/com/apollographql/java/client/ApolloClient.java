@@ -42,7 +42,7 @@ import java.util.List;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 
-import static com.apollographql.apollo3.api.java.Assertions.checkNotNull;
+import static com.apollographql.java.client.internal.Assertions.checkNotNull;
 import static java.util.concurrent.Executors.newCachedThreadPool;
 
 public class ApolloClient implements Closeable {
@@ -124,7 +124,7 @@ public class ApolloClient implements Closeable {
     }
     if (apolloRequest.getCanBeBatched() != null) {
       requestBuilder.addHttpHeader(ExecutionOptions.CAN_BE_BATCHED, apolloRequest.getCanBeBatched().toString());
-    } else if (canBeBatched != null)  {
+    } else if (canBeBatched != null) {
       requestBuilder.addHttpHeader(ExecutionOptions.CAN_BE_BATCHED, canBeBatched.toString());
     }
     DefaultApolloDisposable disposable = new DefaultApolloDisposable();
