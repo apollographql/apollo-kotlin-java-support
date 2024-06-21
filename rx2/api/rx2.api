@@ -1,9 +1,9 @@
 public class com/apollographql/java/rx2/Rx2Apollo {
 	public fun <init> ()V
-	public static fun flowable (Lcom/apollographql/java/runtime/ApolloCall;)Lio/reactivex/Flowable;
-	public static fun flowable (Lcom/apollographql/java/runtime/ApolloCall;Lio/reactivex/BackpressureStrategy;)Lio/reactivex/Flowable;
-	public static fun single (Lcom/apollographql/java/runtime/ApolloCall;)Lio/reactivex/Single;
-	public static fun single (Lcom/apollographql/java/runtime/ApolloCall;Lio/reactivex/BackpressureStrategy;)Lio/reactivex/Single;
+	public static fun flowable (Lcom/apollographql/java/client/ApolloCall;)Lio/reactivex/Flowable;
+	public static fun flowable (Lcom/apollographql/java/client/ApolloCall;Lio/reactivex/BackpressureStrategy;)Lio/reactivex/Flowable;
+	public static fun single (Lcom/apollographql/java/client/ApolloCall;)Lio/reactivex/Single;
+	public static fun single (Lcom/apollographql/java/client/ApolloCall;Lio/reactivex/BackpressureStrategy;)Lio/reactivex/Single;
 }
 
 public final class com/apollographql/java/rx2/VersionKt {

@@ -8,12 +8,11 @@ plugins {
 librarianModule()
 
 dependencies {
-  api(libs.rx.java3)
-  api(project(":client"))
+  api(libs.apollo.api.java)
 }
 
 tasks.withType(Jar::class.java).configureEach {
   manifest {
-    attributes(mapOf("Automatic-Module-Name" to "com.apollographql.java.rx3"))
+    attributes(mapOf("Automatic-Module-Name" to "com.apollographql.java.client"))
   }
 }

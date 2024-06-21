@@ -2,9 +2,9 @@ package com.apollographql.java.rx3;
 
 import com.apollographql.apollo3.api.ApolloResponse;
 import com.apollographql.apollo3.api.Operation;
-import com.apollographql.java.runtime.ApolloCall;
-import com.apollographql.java.runtime.ApolloCallback;
-import com.apollographql.java.runtime.ApolloDisposable;
+import com.apollographql.java.client.ApolloCall;
+import com.apollographql.java.client.ApolloCallback;
+import com.apollographql.java.client.ApolloDisposable;
 import io.reactivex.rxjava3.annotations.CheckReturnValue;
 import io.reactivex.rxjava3.core.BackpressureStrategy;
 import io.reactivex.rxjava3.core.Flowable;

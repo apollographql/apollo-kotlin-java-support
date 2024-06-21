@@ -9,7 +9,7 @@ librarianModule()
 
 dependencies {
   api(libs.rx.java2)
-  api(project(":runtime"))
+  api(project(":client"))
 }
 
 tasks.withType(Jar::class.java).configureEach {
