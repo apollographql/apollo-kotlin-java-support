@@ -1,6 +1,6 @@
 @file:JvmName("GuavaOptionalAdapters")
 
-package com.apollographql.apollo3.api.java.adapter
+package com.apollographql.java.adapters
 
 
 import com.apollographql.apollo3.api.Adapter
@@ -15,7 +15,7 @@ import com.apollographql.apollo3.api.json.JsonWriter
 import com.google.common.base.Optional
 
 /**
- * An adapter for Guava's [Optional]. `null` is deserialized as [Optional.absent].
+ * An adapters for Guava's [Optional]. `null` is deserialized as [Optional.absent].
  */
 class GuavaOptionalAdapter<T : Any>(private val wrappedAdapter: Adapter<T>) : Adapter<Optional<T>> {
   override fun fromJson(reader: JsonReader, customScalarAdapters: CustomScalarAdapters): Optional<T> {

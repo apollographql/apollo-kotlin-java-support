@@ -1,6 +1,6 @@
 @file:JvmName("JavaOptionalAdapters")
 
-package com.apollographql.apollo3.api.java.adapter
+package com.apollographql.java.adapters
 
 import com.apollographql.apollo3.api.Adapter
 import com.apollographql.apollo3.api.AnyAdapter
@@ -14,7 +14,7 @@ import com.apollographql.apollo3.api.json.JsonWriter
 import java.util.Optional
 
 /**
- * An adapter for Java's [Optional]. `null` is deserialized as [Optional.empty].
+ * An adapters for Java's [Optional]. `null` is deserialized as [Optional.empty].
  */
 class JavaOptionalAdapter<T : Any>(private val wrappedAdapter: Adapter<T>) : Adapter<Optional<T>> {
   override fun fromJson(reader: JsonReader, customScalarAdapters: CustomScalarAdapters): Optional<T> {

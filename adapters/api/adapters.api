@@ -1,4 +1,4 @@
-public final class com/apollographql/apollo3/api/java/adapter/GuavaOptionalAdapter : com/apollographql/apollo3/api/Adapter {
+public final class com/apollographql/java/adapters/GuavaOptionalAdapter : com/apollographql/apollo3/api/Adapter {
 	public fun <init> (Lcom/apollographql/apollo3/api/Adapter;)V
 	public fun fromJson (Lcom/apollographql/apollo3/api/json/JsonReader;Lcom/apollographql/apollo3/api/CustomScalarAdapters;)Lcom/google/common/base/Optional;
 	public synthetic fun fromJson (Lcom/apollographql/apollo3/api/json/JsonReader;Lcom/apollographql/apollo3/api/CustomScalarAdapters;)Ljava/lang/Object;
@@ -6,15 +6,15 @@ public final class com/apollographql/apollo3/api/java/adapter/GuavaOptionalAdapt
 	public synthetic fun toJson (Lcom/apollographql/apollo3/api/json/JsonWriter;Lcom/apollographql/apollo3/api/CustomScalarAdapters;Ljava/lang/Object;)V
 }
 
-public final class com/apollographql/apollo3/api/java/adapter/GuavaOptionalAdapters {
-	public static final field GuavaOptionalAnyAdapter Lcom/apollographql/apollo3/api/java/adapter/GuavaOptionalAdapter;
-	public static final field GuavaOptionalBooleanAdapter Lcom/apollographql/apollo3/api/java/adapter/GuavaOptionalAdapter;
-	public static final field GuavaOptionalDoubleAdapter Lcom/apollographql/apollo3/api/java/adapter/GuavaOptionalAdapter;
-	public static final field GuavaOptionalIntAdapter Lcom/apollographql/apollo3/api/java/adapter/GuavaOptionalAdapter;
-	public static final field GuavaOptionalStringAdapter Lcom/apollographql/apollo3/api/java/adapter/GuavaOptionalAdapter;
+public final class com/apollographql/java/adapters/GuavaOptionalAdapters {
+	public static final field GuavaOptionalAnyAdapter Lcom/apollographql/java/adapters/GuavaOptionalAdapter;
+	public static final field GuavaOptionalBooleanAdapter Lcom/apollographql/java/adapters/GuavaOptionalAdapter;
+	public static final field GuavaOptionalDoubleAdapter Lcom/apollographql/java/adapters/GuavaOptionalAdapter;
+	public static final field GuavaOptionalIntAdapter Lcom/apollographql/java/adapters/GuavaOptionalAdapter;
+	public static final field GuavaOptionalStringAdapter Lcom/apollographql/java/adapters/GuavaOptionalAdapter;
 }
 
-public final class com/apollographql/apollo3/api/java/adapter/JavaOptionalAdapter : com/apollographql/apollo3/api/Adapter {
+public final class com/apollographql/java/adapters/JavaOptionalAdapter : com/apollographql/apollo3/api/Adapter {
 	public fun <init> (Lcom/apollographql/apollo3/api/Adapter;)V
 	public synthetic fun fromJson (Lcom/apollographql/apollo3/api/json/JsonReader;Lcom/apollographql/apollo3/api/CustomScalarAdapters;)Ljava/lang/Object;
 	public fun fromJson (Lcom/apollographql/apollo3/api/json/JsonReader;Lcom/apollographql/apollo3/api/CustomScalarAdapters;)Ljava/util/Optional;
@@ -22,12 +22,12 @@ public final class com/apollographql/apollo3/api/java/adapter/JavaOptionalAdapte
 	public fun toJson (Lcom/apollographql/apollo3/api/json/JsonWriter;Lcom/apollographql/apollo3/api/CustomScalarAdapters;Ljava/util/Optional;)V
 }
 
-public final class com/apollographql/apollo3/api/java/adapter/JavaOptionalAdapters {
-	public static final field JavaOptionalAnyAdapter Lcom/apollographql/apollo3/api/java/adapter/JavaOptionalAdapter;
-	public static final field JavaOptionalBooleanAdapter Lcom/apollographql/apollo3/api/java/adapter/JavaOptionalAdapter;
-	public static final field JavaOptionalDoubleAdapter Lcom/apollographql/apollo3/api/java/adapter/JavaOptionalAdapter;
-	public static final field JavaOptionalIntAdapter Lcom/apollographql/apollo3/api/java/adapter/JavaOptionalAdapter;
-	public static final field JavaOptionalStringAdapter Lcom/apollographql/apollo3/api/java/adapter/JavaOptionalAdapter;
+public final class com/apollographql/java/adapters/JavaOptionalAdapters {
+	public static final field JavaOptionalAnyAdapter Lcom/apollographql/java/adapters/JavaOptionalAdapter;
+	public static final field JavaOptionalBooleanAdapter Lcom/apollographql/java/adapters/JavaOptionalAdapter;
+	public static final field JavaOptionalDoubleAdapter Lcom/apollographql/java/adapters/JavaOptionalAdapter;
+	public static final field JavaOptionalIntAdapter Lcom/apollographql/java/adapters/JavaOptionalAdapter;
+	public static final field JavaOptionalStringAdapter Lcom/apollographql/java/adapters/JavaOptionalAdapter;
 }
 
 public final class com/apollographql/java/adapters/VersionKt {
