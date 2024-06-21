@@ -1,0 +1,888 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Builder</title>
+<link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../../index.html">
+                            apollo-kotlin-java-support
+                    </a>            </div>
+            <div class="library-version">
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;com.apollographql.java.client/-apollo-client/-builder/index.html&quot;}">0.0.1</dokka-template-command>            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":client/main">jvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="client::com.apollographql.java.client/ApolloClient.Builder///PointingToDeclaration//-1083565173">
+  <div class="breadcrumbs"><a href="../../../index.html">client</a><span class="delimiter">/</span><a href="../../index.html">com.apollographql.java.client</a><span class="delimiter">/</span><a href="../index.html">ApolloClient</a><span class="delimiter">/</span><span class="current">Builder</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Builder</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">Builder</a> : <span data-unresolved-link="com.apollographql.apollo3.api/MutableExecutionOptions///PointingToDeclaration/">MutableExecutionOptions</span><span class="token operator">&lt;</span><span data-unresolved-link="com.apollographql.apollo3.api/MutableExecutionOptions///PointingToGenericParameters(0)/">T</span><span class="token operator">&gt; </span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="827898993%2FConstructors%2F-1083565173" anchor-label="Builder" id="827898993%2FConstructors%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-builder.html"><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="827898993%2FConstructors%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-91357944%2FProperties%2F-1083565173" anchor-label="CAN_BE_BATCHED" id="-91357944%2FProperties%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../../com.apollographql.java.client.internal/-default-apollo-call/index.html#-91357944%2FProperties%2F-1083565173"><span><span>CAN_BE_BATCHED</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-91357944%2FProperties%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="../../../com.apollographql.java.client.internal/-default-apollo-call/index.html#-91357944%2FProperties%2F-1083565173">CAN_BE_BATCHED</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a><span class="token operator"> = </span><span class="token string">"X-APOLLO-CAN-BE-BATCHED"</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1612893592%2FProperties%2F-1083565173" anchor-label="canBeBatched" id="-1612893592%2FProperties%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="can-be-batched.html"><span>can</span><wbr><span>Be</span><wbr><span><span>Batched</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1612893592%2FProperties%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@get:</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span></div></div><span class="token keyword">open </span><span class="token keyword">val </span><a href="can-be-batched.html">canBeBatched</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1241699590%2FProperties%2F-1083565173" anchor-label="Companion" id="-1241699590%2FProperties%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../../com.apollographql.java.client.internal/-default-apollo-call/index.html#-1241699590%2FProperties%2F-1083565173"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1241699590%2FProperties%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="../../../com.apollographql.java.client.internal/-default-apollo-call/index.html#-1241699590%2FProperties%2F-1083565173">Companion</a><span class="token operator">: </span><span data-unresolved-link="com.apollographql.apollo3.api/ExecutionOptions.Companion///PointingToDeclaration/">ExecutionOptions.Companion</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="515957449%2FProperties%2F-1083565173" anchor-label="enableAutoPersistedQueries" id="515957449%2FProperties%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="enable-auto-persisted-queries.html"><span>enable</span><wbr><span>Auto</span><wbr><span>Persisted</span><wbr><span><span>Queries</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="515957449%2FProperties%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@get:</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span></div></div><span class="token keyword">open </span><span class="token keyword">val </span><a href="enable-auto-persisted-queries.html">enableAutoPersistedQueries</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1268980023%2FProperties%2F-1083565173" anchor-label="executionContext" id="1268980023%2FProperties%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="execution-context.html"><span>execution</span><wbr><span><span>Context</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1268980023%2FProperties%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@get:</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span></div></div><span class="token keyword">open </span><span class="token keyword">val </span><a href="execution-context.html">executionContext</a><span class="token operator">: </span><span data-unresolved-link="com.apollographql.apollo3.api/ExecutionContext///PointingToDeclaration/">ExecutionContext</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1269803557%2FProperties%2F-1083565173" anchor-label="httpMethod" id="1269803557%2FProperties%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="http-method.html"><span>http</span><wbr><span><span>Method</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1269803557%2FProperties%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@get:</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span></div></div><span class="token keyword">open </span><span class="token keyword">val </span><a href="http-method.html">httpMethod</a><span class="token operator">: </span><span data-unresolved-link="com.apollographql.apollo3.api.http/HttpMethod///PointingToDeclaration/">HttpMethod</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="46919518%2FProperties%2F-1083565173" anchor-label="sendApqExtensions" id="46919518%2FProperties%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="send-apq-extensions.html"><span>send</span><wbr><span>Apq</span><wbr><span><span>Extensions</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="46919518%2FProperties%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@get:</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span></div></div><span class="token keyword">open </span><span class="token keyword">val </span><a href="send-apq-extensions.html">sendApqExtensions</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1747701269%2FProperties%2F-1083565173" anchor-label="sendDocument" id="-1747701269%2FProperties%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="send-document.html"><span>send</span><wbr><span><span>Document</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1747701269%2FProperties%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@get:</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span></div></div><span class="token keyword">open </span><span class="token keyword">val </span><a href="send-document.html">sendDocument</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-112824830%2FFunctions%2F-1083565173" anchor-label="addCustomScalarAdapter" id="-112824830%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-custom-scalar-adapter.html"><span>add</span><wbr><span>Custom</span><wbr><span>Scalar</span><wbr><span><span>Adapter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-112824830%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="add-custom-scalar-adapter.html">T</a><span class="token operator">&gt; </span><a href="add-custom-scalar-adapter.html"><span class="token function">addCustomScalarAdapter</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span>&nbsp;</span>customScalarType<span class="token operator">: </span><span data-unresolved-link="com.apollographql.apollo3.api/CustomScalarType///PointingToDeclaration/">CustomScalarType</span><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span>&nbsp;</span>customScalarAdapter<span class="token operator">: </span><span data-unresolved-link="com.apollographql.apollo3.api/Adapter///PointingToDeclaration/">Adapter</span><span class="token operator">&lt;</span><a href="add-custom-scalar-adapter.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div><div class="brief ">Registers the given customScalarAdapter.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-569733954%2FFunctions%2F-1083565173" anchor-label="addExecutionContext" id="-569733954%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-execution-context.html"><span>add</span><wbr><span>Execution</span><wbr><span><span>Context</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-569733954%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="add-execution-context.html"><span class="token function">addExecutionContext</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span>&nbsp;</span>executionContext<span class="token operator">: </span><span data-unresolved-link="com.apollographql.apollo3.api/ExecutionContext///PointingToDeclaration/">ExecutionContext</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1385344073%2FFunctions%2F-1083565173" anchor-label="addHttpHeader" id="1385344073%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-http-header.html"><span>add</span><wbr><span>Http</span><wbr><span><span>Header</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1385344073%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="add-http-header.html"><span class="token function">addHttpHeader</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span>&nbsp;</span>name<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span>&nbsp;</span>value<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-746376221%2FFunctions%2F-1083565173" anchor-label="addHttpInterceptor" id="-746376221%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-http-interceptor.html"><span>add</span><wbr><span>Http</span><wbr><span><span>Interceptor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-746376221%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="add-http-interceptor.html"><span class="token function">addHttpInterceptor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span>&nbsp;</span>interceptor<span class="token operator">: </span><a href="../../../com.apollographql.java.client.network.http/-http-interceptor/index.html">HttpInterceptor</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="235480868%2FFunctions%2F-1083565173" anchor-label="addHttpInterceptors" id="235480868%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-http-interceptors.html"><span>add</span><wbr><span>Http</span><wbr><span><span>Interceptors</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="235480868%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="add-http-interceptors.html"><span class="token function">addHttpInterceptors</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span>&nbsp;</span>interceptors<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="../../../com.apollographql.java.client.network.http/-http-interceptor/index.html">HttpInterceptor</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1006003037%2FFunctions%2F-1083565173" anchor-label="addInterceptor" id="-1006003037%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-interceptor.html"><span>add</span><wbr><span><span>Interceptor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1006003037%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="add-interceptor.html"><span class="token function">addInterceptor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">interceptor<span class="token operator">: </span><a href="../../../com.apollographql.java.client.interceptor/-apollo-interceptor/index.html">ApolloInterceptor</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-269857410%2FFunctions%2F-1083565173" anchor-label="addInterceptors" id="-269857410%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-interceptors.html"><span>add</span><wbr><span><span>Interceptors</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-269857410%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="add-interceptors.html"><span class="token function">addInterceptors</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span>&nbsp;</span>interceptors<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="../../../com.apollographql.java.client.interceptor/-apollo-interceptor/index.html">ApolloInterceptor</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1566826972%2FFunctions%2F-1083565173" anchor-label="addWsHeader" id="-1566826972%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-ws-header.html"><span>add</span><wbr><span>Ws</span><wbr><span><span>Header</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1566826972%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="add-ws-header.html"><span class="token function">addWsHeader</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span>&nbsp;</span>header<span class="token operator">: </span><span data-unresolved-link="com.apollographql.apollo3.api.http/HttpHeader///PointingToDeclaration/">HttpHeader</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2080811741%2FFunctions%2F-1083565173" anchor-label="addWsHeaders" id="2080811741%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-ws-headers.html"><span>add</span><wbr><span>Ws</span><wbr><span><span>Headers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2080811741%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="add-ws-headers.html"><span class="token function">addWsHeaders</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span>&nbsp;</span>headers<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><span data-unresolved-link="com.apollographql.apollo3.api.http/HttpHeader///PointingToDeclaration/">HttpHeader</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="477299105%2FFunctions%2F-1083565173" anchor-label="autoPersistedQueries" id="477299105%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="auto-persisted-queries.html"><span>auto</span><wbr><span>Persisted</span><wbr><span><span>Queries</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="477299105%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="auto-persisted-queries.html"><span class="token function">autoPersistedQueries</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="auto-persisted-queries.html"><span class="token function">autoPersistedQueries</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">httpMethodForHashedQueries<span class="token operator">: </span><span data-unresolved-link="com.apollographql.apollo3.api.http/HttpMethod///PointingToDeclaration/">HttpMethod</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="auto-persisted-queries.html"><span class="token function">autoPersistedQueries</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">httpMethodForHashedQueries<span class="token operator">: </span><span data-unresolved-link="com.apollographql.apollo3.api.http/HttpMethod///PointingToDeclaration/">HttpMethod</span><span class="token punctuation">, </span></span><span class="parameter ">httpMethodForDocumentQueries<span class="token operator">: </span><span data-unresolved-link="com.apollographql.apollo3.api.http/HttpMethod///PointingToDeclaration/">HttpMethod</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="auto-persisted-queries.html"><span class="token function">autoPersistedQueries</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">httpMethodForHashedQueries<span class="token operator">: </span><span data-unresolved-link="com.apollographql.apollo3.api.http/HttpMethod///PointingToDeclaration/">HttpMethod</span><span class="token punctuation">, </span></span><span class="parameter ">httpMethodForDocumentQueries<span class="token operator">: </span><span data-unresolved-link="com.apollographql.apollo3.api.http/HttpMethod///PointingToDeclaration/">HttpMethod</span><span class="token punctuation">, </span></span><span class="parameter ">enableByDefault<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="776260766%2FFunctions%2F-1083565173" anchor-label="build" id="776260766%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="build.html"><span><span>build</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="776260766%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="build.html"><span class="token function">build</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../index.html">ApolloClient</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-389107097%2FFunctions%2F-1083565173" anchor-label="callFactory" id="-389107097%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="call-factory.html"><span>call</span><wbr><span><span>Factory</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-389107097%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="call-factory.html"><span class="token function">callFactory</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">factory<span class="token operator">: </span><span data-unresolved-link="okhttp3/Call.Factory///PointingToDeclaration/">Call.Factory</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div><div class="brief ">Set the custom call factory for creating <span data-unresolved-link="okhttp3/Call///PointingToDeclaration/">Call</span> instances.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-962504762%2FFunctions%2F-1083565173" anchor-label="canBeBatched" id="-962504762%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="can-be-batched.html"><span>can</span><wbr><span>Be</span><wbr><span><span>Batched</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-962504762%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="can-be-batched.html"><span class="token function">canBeBatched</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span>&nbsp;</span>canBeBatched<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1426811533%2FFunctions%2F-1083565173" anchor-label="customScalarAdapters" id="1426811533%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="custom-scalar-adapters.html"><span>custom</span><wbr><span>Scalar</span><wbr><span><span>Adapters</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1426811533%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="custom-scalar-adapters.html"><span class="token function">customScalarAdapters</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span>&nbsp;</span>customScalarAdapters<span class="token operator">: </span><span data-unresolved-link="com.apollographql.apollo3.api/CustomScalarAdapters///PointingToDeclaration/">CustomScalarAdapters</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-322827727%2FFunctions%2F-1083565173" anchor-label="dispatcher" id="-322827727%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="dispatcher.html"><span><span>dispatcher</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-322827727%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="dispatcher.html"><span class="token function">dispatcher</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">dispatcher<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Executor.html">Executor</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div><div class="brief ">The <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Executor.html">Executor</a> to use for dispatching the requests.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1356486021%2FFunctions%2F-1083565173" anchor-label="enableAutoPersistedQueries" id="1356486021%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="enable-auto-persisted-queries.html"><span>enable</span><wbr><span>Auto</span><wbr><span>Persisted</span><wbr><span><span>Queries</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1356486021%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="enable-auto-persisted-queries.html"><span class="token function">enableAutoPersistedQueries</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span>&nbsp;</span>enableAutoPersistedQueries<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1579598582%2FFunctions%2F-1083565173" anchor-label="getCanBeBatched" id="-1579598582%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../../com.apollographql.java.client.internal/-default-apollo-call/index.html#-1579598582%2FFunctions%2F-1083565173"><span>get</span><wbr><span>Can</span><wbr><span>Be</span><wbr><span><span>Batched</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1579598582%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="../../../com.apollographql.java.client.internal/-default-apollo-call/index.html#-1579598582%2FFunctions%2F-1083565173"><span class="token function">getCanBeBatched</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1723640299%2FFunctions%2F-1083565173" anchor-label="getEnableAutoPersistedQueries" id="1723640299%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../../com.apollographql.java.client.internal/-default-apollo-call/index.html#1723640299%2FFunctions%2F-1083565173"><span>get</span><wbr><span>Enable</span><wbr><span>Auto</span><wbr><span>Persisted</span><wbr><span><span>Queries</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1723640299%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="../../../com.apollographql.java.client.internal/-default-apollo-call/index.html#1723640299%2FFunctions%2F-1083565173"><span class="token function">getEnableAutoPersistedQueries</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2055929127%2FFunctions%2F-1083565173" anchor-label="getExecutionContext" id="-2055929127%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../../com.apollographql.java.client.internal/-default-apollo-call/index.html#-2055929127%2FFunctions%2F-1083565173"><span>get</span><wbr><span>Execution</span><wbr><span><span>Context</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2055929127%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="../../../com.apollographql.java.client.internal/-default-apollo-call/index.html#-2055929127%2FFunctions%2F-1083565173"><span class="token function">getExecutionContext</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.apollographql.apollo3.api/ExecutionContext///PointingToDeclaration/">ExecutionContext</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1124150630%2FFunctions%2F-1083565173" anchor-label="getHttpHeaders" id="1124150630%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-http-headers.html"><span>get</span><wbr><span>Http</span><wbr><span><span>Headers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1124150630%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="get-http-headers.html"><span class="token function">getHttpHeaders</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><span data-unresolved-link="com.apollographql.apollo3.api.http/HttpHeader///PointingToDeclaration/">HttpHeader</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="487716167%2FFunctions%2F-1083565173" anchor-label="getHttpMethod" id="487716167%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../../com.apollographql.java.client.internal/-default-apollo-call/index.html#487716167%2FFunctions%2F-1083565173"><span>get</span><wbr><span>Http</span><wbr><span><span>Method</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="487716167%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="../../../com.apollographql.java.client.internal/-default-apollo-call/index.html#487716167%2FFunctions%2F-1083565173"><span class="token function">getHttpMethod</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.apollographql.apollo3.api.http/HttpMethod///PointingToDeclaration/">HttpMethod</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="53950972%2FFunctions%2F-1083565173" anchor-label="getSendApqExtensions" id="53950972%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../../com.apollographql.java.client.internal/-default-apollo-call/index.html#53950972%2FFunctions%2F-1083565173"><span>get</span><wbr><span>Send</span><wbr><span>Apq</span><wbr><span><span>Extensions</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="53950972%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="../../../com.apollographql.java.client.internal/-default-apollo-call/index.html#53950972%2FFunctions%2F-1083565173"><span class="token function">getSendApqExtensions</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1714406259%2FFunctions%2F-1083565173" anchor-label="getSendDocument" id="-1714406259%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../../com.apollographql.java.client.internal/-default-apollo-call/index.html#-1714406259%2FFunctions%2F-1083565173"><span>get</span><wbr><span>Send</span><wbr><span><span>Document</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1714406259%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="../../../com.apollographql.java.client.internal/-default-apollo-call/index.html#-1714406259%2FFunctions%2F-1083565173"><span class="token function">getSendDocument</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2086585233%2FFunctions%2F-1083565173" anchor-label="httpBatching" id="2086585233%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="http-batching.html"><span>http</span><wbr><span><span>Batching</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2086585233%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="http-batching.html"><span class="token function">httpBatching</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">batchIntervalMillis<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">maxBatchSize<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">enableByDefault<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div><div class="brief ">Batch HTTP queries to execute multiple at once.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-26598554%2FFunctions%2F-1083565173" anchor-label="httpEngine" id="-26598554%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="http-engine.html"><span>http</span><wbr><span><span>Engine</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-26598554%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="http-engine.html"><span class="token function">httpEngine</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">httpEngine<span class="token operator">: </span><a href="../../../com.apollographql.java.client.network.http/-http-engine/index.html">HttpEngine</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="274463820%2FFunctions%2F-1083565173" anchor-label="httpExposeErrorBody" id="274463820%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="http-expose-error-body.html"><span>http</span><wbr><span>Expose</span><wbr><span>Error</span><wbr><span><span>Body</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="274463820%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="http-expose-error-body.html"><span class="token function">httpExposeErrorBody</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">httpExposeErrorBody<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1966289004%2FFunctions%2F-1083565173" anchor-label="httpHeaders" id="-1966289004%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="http-headers.html"><span>http</span><wbr><span><span>Headers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1966289004%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="http-headers.html"><span class="token function">httpHeaders</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span>&nbsp;</span>list<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><span data-unresolved-link="com.apollographql.apollo3.api.http/HttpHeader///PointingToDeclaration/">HttpHeader</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="467556039%2FFunctions%2F-1083565173" anchor-label="httpInterceptors" id="467556039%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="http-interceptors.html"><span>http</span><wbr><span><span>Interceptors</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="467556039%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="http-interceptors.html"><span class="token function">httpInterceptors</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span>&nbsp;</span>interceptors<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="../../../com.apollographql.java.client.network.http/-http-interceptor/index.html">HttpInterceptor</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1447979789%2FFunctions%2F-1083565173" anchor-label="httpMethod" id="1447979789%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="http-method.html"><span>http</span><wbr><span><span>Method</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1447979789%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="http-method.html"><span class="token function">httpMethod</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span>&nbsp;</span>httpMethod<span class="token operator">: </span><span data-unresolved-link="com.apollographql.apollo3.api.http/HttpMethod///PointingToDeclaration/">HttpMethod</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1703342269%2FFunctions%2F-1083565173" anchor-label="httpServerUrl" id="-1703342269%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="http-server-url.html"><span>http</span><wbr><span>Server</span><wbr><span><span>Url</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1703342269%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="http-server-url.html"><span class="token function">httpServerUrl</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">httpServerUrl<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div><div class="brief ">The url of the GraphQL server used for HTTP.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1621948603%2FFunctions%2F-1083565173" anchor-label="interceptors" id="1621948603%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="interceptors.html"><span><span>interceptors</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1621948603%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="interceptors.html"><span class="token function">interceptors</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span>&nbsp;</span>interceptors<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="../../../com.apollographql.java.client.interceptor/-apollo-interceptor/index.html">ApolloInterceptor</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1051381376%2FFunctions%2F-1083565173" anchor-label="networkTransport" id="-1051381376%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="network-transport.html"><span>network</span><wbr><span><span>Transport</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1051381376%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="network-transport.html"><span class="token function">networkTransport</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">networkTransport<span class="token operator">: </span><a href="../../../com.apollographql.java.client.network/-network-transport/index.html">NetworkTransport</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="867473201%2FFunctions%2F-1083565173" anchor-label="okHttpClient" id="867473201%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="ok-http-client.html"><span>ok</span><wbr><span>Http</span><wbr><span><span>Client</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="867473201%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="ok-http-client.html"><span class="token function">okHttpClient</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">okHttpClient<span class="token operator">: </span><span data-unresolved-link="okhttp3/OkHttpClient///PointingToDeclaration/">OkHttpClient</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div><div class="brief ">Set the <span data-unresolved-link="okhttp3/OkHttpClient///PointingToDeclaration/">OkHttpClient</span> to use for making network requests.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1275375528%2FFunctions%2F-1083565173" anchor-label="retryOnError" id="-1275375528%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="retry-on-error.html"><span>retry</span><wbr><span>On</span><wbr><span><span>Error</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1275375528%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="com.apollographql.apollo3.annotations/ApolloExperimental///PointingToDeclaration/"><span class="token annotation builtin">ApolloExperimental</span></span></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="retry-on-error.html"><span class="token function">retryOnError</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">retryOnError<span class="token operator">: </span><a href="../../../../client/com.apollographql.java.client/-apollo-client/-retry-on-error/index.html">ApolloClient.RetryOnError</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-474913392%2FFunctions%2F-1083565173" anchor-label="sendApqExtensions" id="-474913392%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="send-apq-extensions.html"><span>send</span><wbr><span>Apq</span><wbr><span><span>Extensions</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-474913392%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="send-apq-extensions.html"><span class="token function">sendApqExtensions</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span>&nbsp;</span>sendApqExtensions<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-531698013%2FFunctions%2F-1083565173" anchor-label="sendDocument" id="-531698013%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="send-document.html"><span>send</span><wbr><span><span>Document</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-531698013%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="send-document.html"><span class="token function">sendDocument</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span>&nbsp;</span>sendDocument<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="431004699%2FFunctions%2F-1083565173" anchor-label="serverUrl" id="431004699%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="server-url.html"><span>server</span><wbr><span><span>Url</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="431004699%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="server-url.html"><span class="token function">serverUrl</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">serverUrl<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div><div class="brief ">The url of the GraphQL server used for HTTP.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-595500253%2FFunctions%2F-1083565173" anchor-label="subscriptionNetworkTransport" id="-595500253%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="subscription-network-transport.html"><span>subscription</span><wbr><span>Network</span><wbr><span><span>Transport</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-595500253%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="subscription-network-transport.html"><span class="token function">subscriptionNetworkTransport</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">subscriptionNetworkTransport<span class="token operator">: </span><a href="../../../com.apollographql.java.client.network/-network-transport/index.html">NetworkTransport</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2053040141%2FFunctions%2F-1083565173" anchor-label="webSocketFactory" id="-2053040141%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="web-socket-factory.html"><span>web</span><wbr><span>Socket</span><wbr><span><span>Factory</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2053040141%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="web-socket-factory.html"><span class="token function">webSocketFactory</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">factory<span class="token operator">: </span><span data-unresolved-link="okhttp3/WebSocket.Factory///PointingToDeclaration/">WebSocket.Factory</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div><div class="brief ">Set the custom call factory for creating <span data-unresolved-link="okhttp3/WebSocket///PointingToDeclaration/">WebSocket</span> instances.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-147020508%2FFunctions%2F-1083565173" anchor-label="webSocketServerUrl" id="-147020508%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="web-socket-server-url.html"><span>web</span><wbr><span>Socket</span><wbr><span>Server</span><wbr><span><span>Url</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-147020508%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="web-socket-server-url.html"><span class="token function">webSocketServerUrl</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">webSocketServerUrl<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div><div class="brief ">The url of the GraphQL server used for WebSockets.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="230148608%2FFunctions%2F-1083565173" anchor-label="wsHeaders" id="230148608%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="ws-headers.html"><span>ws</span><wbr><span><span>Headers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="230148608%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="ws-headers.html"><span class="token function">wsHeaders</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span>&nbsp;</span>headers<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><span data-unresolved-link="com.apollographql.apollo3.api.http/HttpHeader///PointingToDeclaration/">HttpHeader</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1187103961%2FFunctions%2F-1083565173" anchor-label="wsIdleTimeoutMillis" id="1187103961%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="ws-idle-timeout-millis.html"><span>ws</span><wbr><span>Idle</span><wbr><span>Timeout</span><wbr><span><span>Millis</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1187103961%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="ws-idle-timeout-millis.html"><span class="token function">wsIdleTimeoutMillis</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">wsIdleTimeoutMillis<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1529477750%2FFunctions%2F-1083565173" anchor-label="wsProtocolFactory" id="-1529477750%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="ws-protocol-factory.html"><span>ws</span><wbr><span>Protocol</span><wbr><span><span>Factory</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1529477750%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="ws-protocol-factory.html"><span class="token function">wsProtocolFactory</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">wsProtocolFactory<span class="token operator">: </span><a href="../../../com.apollographql.java.client.network.ws.protocol/-ws-protocol/-factory/index.html">WsProtocol.Factory</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-981038422%2FFunctions%2F-1083565173" anchor-label="wsReopenWhen" id="-981038422%2FFunctions%2F-1083565173" data-filterable-set=":client/main"></a>
+          <div class="table-row" data-filterable-current=":client/main" data-filterable-set=":client/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="ws-reopen-when.html"><span>ws</span><wbr><span>Reopen</span><wbr><span><span>When</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-981038422%2FFunctions%2F-1083565173"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":client/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="ws-reopen-when.html"><span class="token function">wsReopenWhen</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">reopenWhen<span class="token operator">: </span><a href="../../../com.apollographql.java.client.network.ws/-web-socket-network-transport/-reopen-when/index.html">WebSocketNetworkTransport.ReopenWhen</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ApolloClient.Builder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

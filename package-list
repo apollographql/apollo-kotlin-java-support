@@ -1,16 +1,16 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
 
-module:runtime
-com.apollographql.java.runtime
-com.apollographql.java.runtime.interceptor
-com.apollographql.java.runtime.interceptor.internal
-com.apollographql.java.runtime.internal
-com.apollographql.java.runtime.network
-com.apollographql.java.runtime.network.http
-com.apollographql.java.runtime.network.http.internal
-com.apollographql.java.runtime.network.ws
-com.apollographql.java.runtime.network.ws.protocol
+module:client
+com.apollographql.java.client
+com.apollographql.java.client.interceptor
+com.apollographql.java.client.interceptor.internal
+com.apollographql.java.client.internal
+com.apollographql.java.client.network
+com.apollographql.java.client.network.http
+com.apollographql.java.client.network.http.internal
+com.apollographql.java.client.network.ws
+com.apollographql.java.client.network.ws.protocol
 module:rx2
 com.apollographql.java.rx2
 module:rx3
