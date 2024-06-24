@@ -1,1 +1,1 @@
-sourceset_dependencies = '{":adapters/main":[],":client/main":[],":rx3/main":[],":rx2/main":[]}'
+sourceset_dependencies = '{":client/main":[],":rx3/main":[],":rx2/main":[]}'

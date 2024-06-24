@@ -1,8 +1,6 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
 
-module:adapters
-com.apollographql.java.adapters
 module:client
 com.apollographql.java.client
 com.apollographql.java.client.interceptor
