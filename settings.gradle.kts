@@ -6,4 +6,4 @@ pluginManagement {
 
 includeBuild("build-logic")
 
-include("client", "rx2", "rx3", "adapters")
+include("client", "rx2", "rx3")
