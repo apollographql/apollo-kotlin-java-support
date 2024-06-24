@@ -1,0 +1,40 @@
+import com.apollographql.execution.gradle.internal.CopySchema
+
+plugins {
+  id("org.jetbrains.kotlin.jvm").version("2.0.0")
+  id("com.google.devtools.ksp").version("2.0.0-1.0.21")
+  id("com.apollographql.execution").version("0.0.1")
+}
+
+//kotlin {
+// Can't use apiVersion KOTLIN_2_0 when using languageVersion KOTLIN_1_9, which is the case here because we're using KSP 1
+// TODO: move to KSP 2 and remove this when https://github.com/google/ksp/issues/1823 is resolved
+//  languageVersion.set(KotlinVersion.KOTLIN_1_9)
+//}
+
+dependencies {
+  implementation(libs.apollo.api)
+  implementation(libs.kotlinx.coroutines)
+  implementation(libs.atomicfu.library)
+  implementation(libs.apollo.execution)
+
+  implementation(platform(libs.http4k.bom.get()))
+  implementation(libs.http4k.core)
+  implementation(libs.http4k.server.jetty)
+  implementation(libs.slf4j.nop.get().toString()) {
+    because("jetty uses SL4F")
+  }
+}
+
+apolloExecution {
+  service("sampleserver") {
+    packageName = "sample.server"
+  }
+}
+
+tasks.withType(CopySchema::class.java).configureEach {
+  doFirst {
+    // https://github.com/apollographql/apollo-kotlin-execution/pull/6
+    (this as CopySchema).to.get().asFile.delete()
+  }
+}
