@@ -1,0 +1,25 @@
+schema {
+  query: QueryRoot
+  mutation: MutationRoot
+  subscription: SubscriptionRoot
+}
+
+type QueryRoot {
+  random: Int!
+
+  zero: Int!
+}
+
+type MutationRoot {
+  closeAllWebSockets: ID!
+}
+
+type SubscriptionRoot {
+  count(to: Int!, intervalMillis: Int!): Int!
+
+  operationError: ID!
+
+  graphqlAccessError(after: Int!): Int
+
+  closeWebSocket: ID!
+}
