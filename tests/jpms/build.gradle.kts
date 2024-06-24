@@ -1,7 +1,7 @@
 plugins {
   id("java")
   id("application")
-  id("com.apollographql.apollo3").version("4.0.0-beta.7")
+  id("com.apollographql.apollo3")
 }
 
 dependencies {

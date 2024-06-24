@@ -1,22 +1,16 @@
 import com.apollographql.execution.gradle.internal.CopySchema
 
 plugins {
-  id("org.jetbrains.kotlin.jvm").version("2.0.0")
-  id("com.google.devtools.ksp").version("2.0.0-1.0.21")
-  id("com.apollographql.execution").version("0.0.1")
+  id("org.jetbrains.kotlin.jvm")
+  id("com.google.devtools.ksp")
+  id("com.apollographql.execution")
 }
-
-//kotlin {
-// Can't use apiVersion KOTLIN_2_0 when using languageVersion KOTLIN_1_9, which is the case here because we're using KSP 1
-// TODO: move to KSP 2 and remove this when https://github.com/google/ksp/issues/1823 is resolved
-//  languageVersion.set(KotlinVersion.KOTLIN_1_9)
-//}
 
 dependencies {
   implementation(libs.apollo.api)
   implementation(libs.kotlinx.coroutines)
   implementation(libs.atomicfu.library)
-  implementation(libs.apollo.execution)
+  implementation(libs.apollo.execution.runtime)
 
   implementation(platform(libs.http4k.bom.get()))
   implementation(libs.http4k.core)

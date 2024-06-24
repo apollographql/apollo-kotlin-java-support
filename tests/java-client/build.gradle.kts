@@ -2,7 +2,7 @@ import com.apollographql.apollo3.annotations.ApolloExperimental
 
 plugins {
   id("java")
-  id("com.apollographql.apollo3").version("4.0.0-beta.7")
+  id("com.apollographql.apollo3")
 }
 
 dependencies {
