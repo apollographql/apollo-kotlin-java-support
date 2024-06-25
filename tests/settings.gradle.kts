@@ -1,5 +1,4 @@
 pluginManagement {
-//  includeBuild("../build-logic")
   listOf(repositories, dependencyResolutionManagement.repositories).forEach {
     it.apply {
       mavenCentral()
