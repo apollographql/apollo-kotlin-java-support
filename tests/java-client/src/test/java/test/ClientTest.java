@@ -1,9 +1,9 @@
 package test;
 
-import com.apollographql.apollo3.api.ApolloRequest;
-import com.apollographql.apollo3.api.ApolloResponse;
-import com.apollographql.apollo3.api.Operation;
-import com.apollographql.apollo3.exception.ApolloHttpException;
+import com.apollographql.apollo.api.ApolloRequest;
+import com.apollographql.apollo.api.ApolloResponse;
+import com.apollographql.apollo.api.Operation;
+import com.apollographql.apollo.exception.ApolloHttpException;
 import com.apollographql.java.client.ApolloCallback;
 import com.apollographql.java.client.ApolloClient;
 import com.apollographql.java.client.ApolloDisposable;

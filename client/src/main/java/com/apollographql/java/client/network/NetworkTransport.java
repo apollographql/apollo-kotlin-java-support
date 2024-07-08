@@ -1,7 +1,7 @@
 package com.apollographql.java.client.network;
 
-import com.apollographql.apollo3.api.ApolloRequest;
-import com.apollographql.apollo3.api.Operation;
+import com.apollographql.apollo.api.ApolloRequest;
+import com.apollographql.apollo.api.Operation;
 import com.apollographql.java.client.ApolloCallback;
 import com.apollographql.java.client.ApolloDisposable;
 import org.jetbrains.annotations.NotNull;

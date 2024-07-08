@@ -1,6 +1,6 @@
 package com.apollographql.java.client.network.http.internal;
 
-import com.apollographql.apollo3.api.http.HttpRequest;
+import com.apollographql.apollo.api.http.HttpRequest;
 import com.apollographql.java.client.network.http.HttpCallback;
 import com.apollographql.java.client.network.http.HttpInterceptor;
 import com.apollographql.java.client.network.http.HttpInterceptorChain;

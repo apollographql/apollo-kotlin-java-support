@@ -1,11 +1,11 @@
 package com.apollographql.java.client.network.ws.protocol;
 
-import com.apollographql.apollo3.api.Adapters;
-import com.apollographql.apollo3.api.ApolloRequest;
-import com.apollographql.apollo3.api.CustomScalarAdapters;
-import com.apollographql.apollo3.api.Operation;
-import com.apollographql.apollo3.api.json.BufferedSinkJsonWriter;
-import com.apollographql.apollo3.api.json.BufferedSourceJsonReader;
+import com.apollographql.apollo.api.Adapters;
+import com.apollographql.apollo.api.ApolloRequest;
+import com.apollographql.apollo.api.CustomScalarAdapters;
+import com.apollographql.apollo.api.Operation;
+import com.apollographql.apollo.api.json.BufferedSinkJsonWriter;
+import com.apollographql.apollo.api.json.BufferedSourceJsonReader;
 import com.apollographql.java.client.network.ws.WebSocketConnection;
 import okio.Buffer;
 import okio.ByteString;

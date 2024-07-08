@@ -1,10 +1,10 @@
 package com.apollographql.java.client.internal;
 
-import com.apollographql.apollo3.api.ApolloRequest;
-import com.apollographql.apollo3.api.ExecutionContext;
-import com.apollographql.apollo3.api.Operation;
-import com.apollographql.apollo3.api.http.HttpHeader;
-import com.apollographql.apollo3.api.http.HttpMethod;
+import com.apollographql.apollo.api.ApolloRequest;
+import com.apollographql.apollo.api.ExecutionContext;
+import com.apollographql.apollo.api.Operation;
+import com.apollographql.apollo.api.http.HttpHeader;
+import com.apollographql.apollo.api.http.HttpMethod;
 import com.apollographql.java.client.ApolloCall;
 import com.apollographql.java.client.ApolloCallback;
 import com.apollographql.java.client.ApolloClient;

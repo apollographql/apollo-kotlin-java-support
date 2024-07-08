@@ -1,6 +1,6 @@
 package test;
 
-import com.apollographql.apollo3.api.ApolloResponse;
+import com.apollographql.apollo.api.ApolloResponse;
 import com.apollographql.java.client.ApolloCallback;
 import com.apollographql.java.client.ApolloClient;
 import com.apollographql.java.client.ApolloDisposable;

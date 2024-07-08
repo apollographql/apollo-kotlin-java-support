@@ -1,7 +1,7 @@
 package com.apollographql.java.client;
 
-import com.apollographql.apollo3.api.MutableExecutionOptions;
-import com.apollographql.apollo3.api.Operation;
+import com.apollographql.apollo.api.MutableExecutionOptions;
+import com.apollographql.apollo.api.Operation;
 import org.jetbrains.annotations.NotNull;
 
 public interface ApolloCall<D extends Operation.Data> extends MutableExecutionOptions<ApolloCall<D>> {

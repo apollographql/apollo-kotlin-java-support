@@ -1,12 +1,12 @@
 package com.apollographql.java.client.interceptor.internal;
 
-import com.apollographql.apollo3.api.ApolloRequest;
-import com.apollographql.apollo3.api.ApolloResponse;
-import com.apollographql.apollo3.api.Error;
-import com.apollographql.apollo3.api.Mutation;
-import com.apollographql.apollo3.api.Operation;
-import com.apollographql.apollo3.api.http.HttpMethod;
-import com.apollographql.apollo3.exception.AutoPersistedQueriesNotSupported;
+import com.apollographql.apollo.api.ApolloRequest;
+import com.apollographql.apollo.api.ApolloResponse;
+import com.apollographql.apollo.api.Error;
+import com.apollographql.apollo.api.Mutation;
+import com.apollographql.apollo.api.Operation;
+import com.apollographql.apollo.api.http.HttpMethod;
+import com.apollographql.apollo.exception.AutoPersistedQueriesNotSupported;
 import com.apollographql.java.client.ApolloCallback;
 import com.apollographql.java.client.interceptor.ApolloInterceptor;
 import com.apollographql.java.client.interceptor.ApolloInterceptorChain;

@@ -1,7 +1,7 @@
 package com.apollographql.java.rx3;
 
-import com.apollographql.apollo3.api.ApolloResponse;
-import com.apollographql.apollo3.api.Operation;
+import com.apollographql.apollo.api.ApolloResponse;
+import com.apollographql.apollo.api.Operation;
 import com.apollographql.java.client.ApolloCall;
 import com.apollographql.java.client.ApolloCallback;
 import com.apollographql.java.client.ApolloDisposable;

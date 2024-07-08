@@ -1,15 +1,15 @@
 package com.apollographql.java.client.network.ws;
 
-import com.apollographql.apollo3.api.ApolloRequest;
-import com.apollographql.apollo3.api.ApolloResponse;
-import com.apollographql.apollo3.api.CustomScalarAdapters;
-import com.apollographql.apollo3.api.Operation;
-import com.apollographql.apollo3.api.Operations;
-import com.apollographql.apollo3.api.http.HttpHeader;
-import com.apollographql.apollo3.api.json.JsonReader;
-import com.apollographql.apollo3.api.json.MapJsonReader;
-import com.apollographql.apollo3.exception.ApolloNetworkException;
-import com.apollographql.apollo3.exception.SubscriptionOperationException;
+import com.apollographql.apollo.api.ApolloRequest;
+import com.apollographql.apollo.api.ApolloResponse;
+import com.apollographql.apollo.api.CustomScalarAdapters;
+import com.apollographql.apollo.api.Operation;
+import com.apollographql.apollo.api.Operations;
+import com.apollographql.apollo.api.http.HttpHeader;
+import com.apollographql.apollo.api.json.JsonReader;
+import com.apollographql.apollo.api.json.MapJsonReader;
+import com.apollographql.apollo.exception.ApolloNetworkException;
+import com.apollographql.apollo.exception.SubscriptionOperationException;
 import com.apollographql.java.client.ApolloCallback;
 import com.apollographql.java.client.ApolloDisposable;
 import com.apollographql.java.client.network.NetworkTransport;

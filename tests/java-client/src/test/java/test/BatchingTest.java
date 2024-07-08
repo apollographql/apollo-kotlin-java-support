@@ -2,10 +2,10 @@ package test;
 
 import batching.GetLaunch2Query;
 import batching.GetLaunchQuery;
-import com.apollographql.apollo3.api.ApolloResponse;
-import com.apollographql.apollo3.api.CustomScalarAdapters;
-import com.apollographql.apollo3.api.http.HttpHeader;
-import com.apollographql.apollo3.api.json.BufferedSourceJsonReader;
+import com.apollographql.apollo.api.ApolloResponse;
+import com.apollographql.apollo.api.CustomScalarAdapters;
+import com.apollographql.apollo.api.http.HttpHeader;
+import com.apollographql.apollo.api.json.BufferedSourceJsonReader;
 import com.apollographql.java.client.ApolloCallback;
 import com.apollographql.java.client.ApolloClient;
 import com.apollographql.mockserver.MockRequest;
@@ -28,8 +28,8 @@ import java.util.Map;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
-import static com.apollographql.apollo3.api.Adapters.AnyAdapter;
-import static com.apollographql.apollo3.api.ExecutionOptions.CAN_BE_BATCHED;
+import static com.apollographql.apollo.api.Adapters.AnyAdapter;
+import static com.apollographql.apollo.api.ExecutionOptions.CAN_BE_BATCHED;
 import static org.junit.Assert.fail;
 import static test.Utils.sleep;
 

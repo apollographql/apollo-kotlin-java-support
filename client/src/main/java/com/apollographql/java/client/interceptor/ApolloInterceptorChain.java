@@ -1,7 +1,7 @@
 package com.apollographql.java.client.interceptor;
 
-import com.apollographql.apollo3.api.ApolloRequest;
-import com.apollographql.apollo3.api.Operation;
+import com.apollographql.apollo.api.ApolloRequest;
+import com.apollographql.apollo.api.Operation;
 import com.apollographql.java.client.ApolloCallback;
 import com.apollographql.java.client.ApolloDisposable;
 import org.jetbrains.annotations.NotNull;
@@ -11,6 +11,7 @@ import org.jetbrains.annotations.NotNull;
  */
 public interface ApolloInterceptorChain {
   ApolloDisposable getDisposable();
+
   /**
    * Passes the control over to the next {@link ApolloInterceptor} in the responsibility chain and immediately exits as this is a
    * non-blocking call. In order to receive the results back, pass in a callback which will handle the received response or error.

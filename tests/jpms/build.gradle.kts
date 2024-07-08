@@ -1,7 +1,7 @@
 plugins {
   id("java")
   id("application")
-  id("com.apollographql.apollo3")
+  id("com.apollographql.apollo")
 }
 
 dependencies {

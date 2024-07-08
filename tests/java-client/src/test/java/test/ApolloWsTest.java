@@ -1,10 +1,10 @@
 package test;
 
 import com.apollographql.apollo.sample.server.SampleServer;
-import com.apollographql.apollo3.api.ApolloResponse;
-import com.apollographql.apollo3.exception.ApolloException;
-import com.apollographql.apollo3.exception.ApolloNetworkException;
-import com.apollographql.apollo3.exception.SubscriptionOperationException;
+import com.apollographql.apollo.api.ApolloResponse;
+import com.apollographql.apollo.exception.ApolloException;
+import com.apollographql.apollo.exception.ApolloNetworkException;
+import com.apollographql.apollo.exception.SubscriptionOperationException;
 import com.apollographql.java.client.ApolloCallback;
 import com.apollographql.java.client.ApolloClient;
 import com.apollographql.java.client.ApolloDisposable;
