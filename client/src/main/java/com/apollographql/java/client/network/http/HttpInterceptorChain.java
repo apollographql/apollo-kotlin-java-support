@@ -1,6 +1,6 @@
 package com.apollographql.java.client.network.http;
 
-import com.apollographql.apollo3.api.http.HttpRequest;
+import com.apollographql.apollo.api.http.HttpRequest;
 import org.jetbrains.annotations.NotNull;
 
 public interface HttpInterceptorChain {

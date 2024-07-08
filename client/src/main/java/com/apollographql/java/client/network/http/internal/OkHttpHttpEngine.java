@@ -1,9 +1,9 @@
 package com.apollographql.java.client.network.http.internal;
 
-import com.apollographql.apollo3.api.http.HttpMethod;
-import com.apollographql.apollo3.api.http.HttpRequest;
-import com.apollographql.apollo3.api.http.HttpResponse;
-import com.apollographql.apollo3.exception.ApolloNetworkException;
+import com.apollographql.apollo.api.http.HttpMethod;
+import com.apollographql.apollo.api.http.HttpRequest;
+import com.apollographql.apollo.api.http.HttpResponse;
+import com.apollographql.apollo.exception.ApolloNetworkException;
 import com.apollographql.java.client.ApolloDisposable;
 import com.apollographql.java.client.network.http.HttpCallback;
 import com.apollographql.java.client.network.http.HttpEngine;

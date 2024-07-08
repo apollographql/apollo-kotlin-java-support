@@ -1,6 +1,6 @@
 package test;
 
-import com.apollographql.apollo3.api.http.HttpMethod;
+import com.apollographql.apollo.api.http.HttpMethod;
 import com.apollographql.java.client.ApolloClient;
 import com.apollographql.java.rx3.Rx3Apollo;
 import com.apollographql.mockserver.MockRequest;

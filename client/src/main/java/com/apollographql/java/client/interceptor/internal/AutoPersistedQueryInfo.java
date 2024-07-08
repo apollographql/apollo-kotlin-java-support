@@ -1,6 +1,6 @@
 package com.apollographql.java.client.interceptor.internal;
 
-import com.apollographql.apollo3.api.ExecutionContext;
+import com.apollographql.apollo.api.ExecutionContext;
 import org.jetbrains.annotations.NotNull;
 
 class AutoPersistedQueryInfo implements ExecutionContext.Element {
@@ -14,5 +14,6 @@ class AutoPersistedQueryInfo implements ExecutionContext.Element {
     return KEY;
   }
 
-  static final ExecutionContext.Key<AutoPersistedQueryInfo> KEY = new ExecutionContext.Key<AutoPersistedQueryInfo>() {};
+  static final ExecutionContext.Key<AutoPersistedQueryInfo> KEY = new ExecutionContext.Key<AutoPersistedQueryInfo>() {
+  };
 }

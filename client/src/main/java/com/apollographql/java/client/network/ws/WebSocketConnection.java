@@ -1,6 +1,6 @@
 package com.apollographql.java.client.network.ws;
 
-import com.apollographql.apollo3.api.http.HttpHeader;
+import com.apollographql.apollo.api.http.HttpHeader;
 import okhttp3.Headers;
 import okhttp3.Request;
 import okhttp3.Response;
