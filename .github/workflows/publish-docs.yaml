@@ -2,7 +2,7 @@ name: Publish documentation
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   workflow_dispatch:
 
 env:
@@ -11,7 +11,7 @@ env:
   DOCKER_VERSION: '241.16003'
 
 jobs:
-  build:
+  build-docs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -28,10 +28,9 @@ jobs:
 
       - name: Prepare static content
         run: |
-          export JAVA_HOME=$JAVA_HOME_21_X64
           ./gradlew dokkatooGeneratePublicationHtml
           mkdir -p build/static
-          cp -rf build/dokka build/static/kdoc
+          cp -rf build/dokka/html build/static/kdoc
           unzip artifacts/webHelpDOC2-all.zip -d build/static
 
       - name: Deploy Kdoc to github pages

@@ -3,8 +3,10 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="doc"
-                 name="Apollo Kotlin Java Support"
-                 start-page="starter-topic.md">
+                 name="Kotlin Java Support"
+                 start-page="welcome.md">
 
-    <toc-element topic="starter-topic.md"/>
+    <toc-element topic="welcome.md"/>
+    <toc-element toc-title="GitHub" href="https://github.com/apollographql/apollo-kotlin-java-support"/>
+    <toc-element toc-title="Kdoc" href="https://apollographql.github.io/apollo-kotlin-java-support/kdoc"/>
 </instance-profile>
