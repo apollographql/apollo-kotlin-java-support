@@ -1,11 +1,11 @@
-import com.gradleup.librarian.core.librarianModule
+import com.gradleup.librarian.gradle.librarianModule
 import org.gradle.jvm.tasks.Jar
 
 plugins {
   id("org.jetbrains.kotlin.jvm")
 }
 
-librarianModule()
+librarianModule(true)
 
 dependencies {
   api(libs.rx.java2)

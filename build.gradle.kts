@@ -1,12 +1,7 @@
-import com.gradleup.librarian.core.librarianRoot
+import com.gradleup.librarian.gradle.librarianRoot
 
-buildscript {
-  repositories {
-    mavenCentral()
-  }
-  dependencies {
-    classpath("build-logic:build-logic")
-  }
+plugins {
+  id("org.jetbrains.kotlin.jvm").version("2.0.0").apply(false)
+  id("com.gradleup.librarian").version("0.0.4").apply(false)
 }
-
 librarianRoot()

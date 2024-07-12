@@ -1,4 +1,5 @@
-# Apollo Kotlin Java Support
+# Welcome
+
 
 This article describes how to use [Apollo Kotlin](https://github.com/apollographql/apollo-kotlin) in Java projects.
 
