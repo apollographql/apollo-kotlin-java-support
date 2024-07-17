@@ -15,17 +15,17 @@ apollo {
 }
 ```
 
-## The Java runtime
+## The Java client
 
-The default runtime for Apollo Kotlin, `com.apollographql.apollo:apollo-runtime`, exposes a coroutines / Flow-based API that isn't well suited to be consumed from Java.
-That is why a specific runtime, `com.apollographql.java:runtime` is available to use Apollo Kotlin from Java. To use it, add a dependency on this runtime instead of the default one:
+The default runtime for Apollo Kotlin, `com.apollographql.apollo:apollo-runtime`, exposes a client with a coroutines / Flow-based API that isn't well suited to be consumed from Java.
+That is why a specific client, `com.apollographql.java:client` is available to use Apollo Kotlin from Java. To use it, add a dependency on this client instead of the default runtime:
 
 ```kotlin title="build.gradle[.kts]"
 dependencies {
   // ...
 
-  // Use the Java runtime instead of apollo-runtime
-  implementation("com.apollographql.java:runtime:0.0.1")
+  // Use the Java client instead of apollo-runtime
+  implementation("com.apollographql.java:client:0.0.2")
 }
 ```
 Note that the Java runtime currently doesn't support the HTTP or normalized caches.
@@ -144,10 +144,10 @@ dependencies {
   // ...
 
   // For RxJava 2
-  implementation("com.apollographql.java:rx2:0.0.1")
+  implementation("com.apollographql.java:rx2:0.0.2")
 
   // For RxJava 3
-  implementation("com.apollographql.java:rx3:0.0.1")
+  implementation("com.apollographql.java:rx3:0.0.2")
 }
 ```
 Then use the `Rx2Apollo` or `Rx3Apollo` classes to execute GraphQL operations and get RxJava observables:
