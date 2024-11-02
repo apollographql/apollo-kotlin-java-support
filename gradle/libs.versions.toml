@@ -1,6 +1,6 @@
 [versions]
 kotlin-plugin = "2.0.0"
-apollo = "4.0.0-rc.2"
+apollo = "4.0.1"
 apollo-execution = "0.0.2"
 
 [libraries]
