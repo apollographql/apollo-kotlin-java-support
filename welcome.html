@@ -1,5 +1,5 @@
 <!DOCTYPE html SYSTEM "about:legacy-compat">
-<html lang="en-US" data-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2024-11-04T08:44:58.957262495"><title>Welcome | Kotlin Java Support</title><script type="application/json" id="virtual-toc-data">[{"id":"using-the-java-codegen","level":0,"title":"Using the Java codegen","anchor":"#using-the-java-codegen"},{"id":"the-java-client","level":0,"title":"The Java client","anchor":"#the-java-client"},{"id":"rxjava-extensions","level":0,"title":"RxJava extensions","anchor":"#rxjava-extensions"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b267/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/favicon-96x96.png"><link rel="icon" type="image/png" sizes="32x32" href="images/favicon-192x192.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Welcome | Kotlin Java Support"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="Kotlin Java Support Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/welcome.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Welcome | Kotlin Java Support"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+<html lang="en-US" data-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2024-12-20T09:25:14.354740136"><title>Welcome | Kotlin Java Support</title><script type="application/json" id="virtual-toc-data">[{"id":"using-the-java-codegen","level":0,"title":"Using the Java codegen","anchor":"#using-the-java-codegen"},{"id":"the-java-client","level":0,"title":"The Java client","anchor":"#the-java-client"},{"id":"rxjava-extensions","level":0,"title":"RxJava extensions","anchor":"#rxjava-extensions"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b267/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/favicon-96x96.png"><link rel="icon" type="image/png" sizes="32x32" href="images/favicon-192x192.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Welcome | Kotlin Java Support"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="Kotlin Java Support Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/welcome.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Welcome | Kotlin Java Support"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
     "@context": "http://schema.org",
     "@type": "WebPage",
     "@id": "writerside-documentation/welcome.html#webpage",
@@ -13,20 +13,20 @@
     "@id": "writerside-documentation/#website",
     "url": "writerside-documentation/",
     "name": "Kotlin Java Support Help"
-}</script><!-- End Schema.org --></head><body data-id="welcome" data-main-title="Welcome" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="" data-edit-url="https://github.com/apollographql/apollo-kotlin-java-support/edit/main/Writerside/topics/welcome.md"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>Kotlin Java Support  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="welcome" id="welcome.md">Welcome</h1><p id="-mh1nfr_2">This article describes how to use <a href="https://github.com/apollographql/apollo-kotlin" id="-mh1nfr_3" data-external="true" rel="noopener noreferrer">Apollo Kotlin</a> in Java projects.</p><section class="chapter"><h2 id="using-the-java-codegen" data-toc="using-the-java-codegen">Using the Java codegen</h2><p id="-mh1nfr_4">Apollo Kotlin generates Kotlin code by default, but you can configure it to generate Java code instead:</p><div class="code-block" data-lang="kotlin">
+}</script><!-- End Schema.org --></head><body data-id="welcome" data-main-title="Welcome" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="" data-edit-url="https://github.com/apollographql/apollo-kotlin-java-support/edit/main/Writerside/topics/welcome.md"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>Kotlin Java Support  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="welcome" id="welcome.md">Welcome</h1><p id="-x9dr6o_2">This article describes how to use <a href="https://github.com/apollographql/apollo-kotlin" id="-x9dr6o_3" data-external="true" rel="noopener noreferrer">Apollo Kotlin</a> in Java projects.</p><section class="chapter"><h2 id="using-the-java-codegen" data-toc="using-the-java-codegen">Using the Java codegen</h2><p id="-x9dr6o_4">Apollo Kotlin generates Kotlin code by default, but you can configure it to generate Java code instead:</p><div class="code-block" data-lang="kotlin">
 apollo {
   service(&quot;service&quot;) {
     generateKotlinModels.set(false)
   }
 }
-</div></section><section class="chapter"><h2 id="the-java-client" data-toc="the-java-client">The Java client</h2><p id="-mh1nfr_6">The default runtime for Apollo Kotlin, <code class="code" id="-mh1nfr_7">com.apollographql.apollo:apollo-runtime</code>, exposes a client with a coroutines / Flow-based API that isn't well suited to be consumed from Java. That is why a specific client, <code class="code" id="-mh1nfr_8">com.apollographql.java:client</code> is available to use Apollo Kotlin from Java. To use it, add a dependency on this client instead of the default runtime:</p><div class="code-block" data-lang="kotlin">
+</div></section><section class="chapter"><h2 id="the-java-client" data-toc="the-java-client">The Java client</h2><p id="-x9dr6o_6">The default runtime for Apollo Kotlin, <code class="code" id="-x9dr6o_7">com.apollographql.apollo:apollo-runtime</code>, exposes a client with a coroutines / Flow-based API that isn't well suited to be consumed from Java. That is why a specific client, <code class="code" id="-x9dr6o_8">com.apollographql.java:client</code> is available to use Apollo Kotlin from Java. To use it, add a dependency on this client instead of the default runtime:</p><div class="code-block" data-lang="kotlin">
 dependencies {
   // ...
 
   // Use the Java client instead of apollo-runtime
   implementation(&quot;com.apollographql.java:client:0.0.2&quot;)
 }
-</div><p id="-mh1nfr_10">Note that the Java runtime currently doesn't support the HTTP or normalized caches.</p><p id="-mh1nfr_11">The Java runtime has a callbacks based API. This snippet demonstrates initializing an <code class="code" id="-mh1nfr_12">ApolloClient</code> and executing a query in Java:</p><div class="code-block" data-lang="java">
+</div><p id="-x9dr6o_10">Note that the Java runtime currently doesn't support the HTTP or normalized caches.</p><p id="-x9dr6o_11">The Java runtime has a callbacks based API. This snippet demonstrates initializing an <code class="code" id="-x9dr6o_12">ApolloClient</code> and executing a query in Java:</p><div class="code-block" data-lang="java">
 import com.apollographql.java.client.ApolloClient;
 // (...)
 
@@ -51,12 +51,12 @@ apolloClient.query(new MyQuery()).enqueue(response -&gt; {
     }
   }
 });
-</div><section class="chapter"><h3 id="cancelling-requests" data-toc="cancelling-requests">Cancelling requests</h3><p id="-mh1nfr_14"><code class="code" id="-mh1nfr_15">euqueue</code> returns an <code class="code" id="-mh1nfr_16">ApolloDisposable</code> that can be used to cancel the request:</p><div class="code-block" data-lang="java">
+</div><section class="chapter"><h3 id="cancelling-requests" data-toc="cancelling-requests">Cancelling requests</h3><p id="-x9dr6o_14"><code class="code" id="-x9dr6o_15">euqueue</code> returns an <code class="code" id="-x9dr6o_16">ApolloDisposable</code> that can be used to cancel the request:</p><div class="code-block" data-lang="java">
 ApolloDisposable disposable = apolloClient.subscription(new MySubscription()).enqueue(response -&gt; ...)
 // ...
 disposable.dispose();
 
-</div></section><section class="chapter"><h3 id="subscriptions" data-toc="subscriptions">Subscriptions</h3><p id="-mh1nfr_18">Please refer to the <a href="https://www.apollographql.com/docs/kotlin/v4/essentials/subscriptions" id="-mh1nfr_19" data-external="true" rel="noopener noreferrer">subscriptions documentation</a> for more information about subscriptions in general, and the available protocols.</p><p id="-mh1nfr_20">When executing subscriptions with the Java runtime, the callback passed to <code class="code" id="-mh1nfr_21">enqueue()</code> can be called several times:</p><div class="code-block" data-lang="java">
+</div></section><section class="chapter"><h3 id="subscriptions" data-toc="subscriptions">Subscriptions</h3><p id="-x9dr6o_18">Please refer to the <a href="https://www.apollographql.com/docs/kotlin/v4/essentials/subscriptions" id="-x9dr6o_19" data-external="true" rel="noopener noreferrer">subscriptions documentation</a> for more information about subscriptions in general, and the available protocols.</p><p id="-x9dr6o_20">When executing subscriptions with the Java runtime, the callback passed to <code class="code" id="-x9dr6o_21">enqueue()</code> can be called several times:</p><div class="code-block" data-lang="java">
 ApolloClient apolloClient = new ApolloClient.Builder()
   .serverUrl(&quot;https://example.com/graphql&quot;)
   // Configure a protocol factory
@@ -73,7 +73,7 @@ disposable.addListener(() -&gt; {
   // Will be called when an operation terminates (either successfully or due to an error)
 });
 
-</div></section><section class="chapter"><h3 id="interceptors" data-toc="interceptors">Interceptors</h3><p id="-mh1nfr_23"><a href="https://www.apollographql.com/docs/kotlin/v4/advanced/interceptors-http" id="-mh1nfr_24" data-external="true" rel="noopener noreferrer">Like the Kotlin runtime</a>, the Java runtime supports interceptors.</p><ul class="list _bullet" id="-mh1nfr_25"><li class="list__item" id="-mh1nfr_26"><p>HTTP interceptors (<code class="code" id="-mh1nfr_27">HttpInterceptor</code>) can be used to add headers to requests (e.g. for authentication), log requests and responses, etc.</p></li><li class="list__item" id="-mh1nfr_28"><p>GraphQL interceptors (<code class="code" id="-mh1nfr_29">ApolloInterceptor</code>) can be used to modify GraphQL requests and responses, implement retry logic, etc.</p></li></ul><div class="code-block" data-lang="java">
+</div></section><section class="chapter"><h3 id="interceptors" data-toc="interceptors">Interceptors</h3><p id="-x9dr6o_23"><a href="https://www.apollographql.com/docs/kotlin/v4/advanced/interceptors-http" id="-x9dr6o_24" data-external="true" rel="noopener noreferrer">Like the Kotlin runtime</a>, the Java runtime supports interceptors.</p><ul class="list _bullet" id="-x9dr6o_25"><li class="list__item" id="-x9dr6o_26"><p>HTTP interceptors (<code class="code" id="-x9dr6o_27">HttpInterceptor</code>) can be used to add headers to requests (e.g. for authentication), log requests and responses, etc.</p></li><li class="list__item" id="-x9dr6o_28"><p>GraphQL interceptors (<code class="code" id="-x9dr6o_29">ApolloInterceptor</code>) can be used to modify GraphQL requests and responses, implement retry logic, etc.</p></li></ul><div class="code-block" data-lang="java">
 // An HTTP interceptor that adds a custom header to each request
 HttpInterceptor httpInterceptor = (request, chain, callback) -&gt; {
   request = request.newBuilder().addHeader(&quot;my-header&quot;, &quot;true&quot;).build();
@@ -95,11 +95,11 @@ apolloClient = new ApolloClient.Builder()
   .addHttpInterceptor(httpInterceptor)
   .addInterceptor(apolloInterceptor)
   .build();
-</div><p id="-mh1nfr_31">If you already have implemented OkHttp interceptors, you can also use them by passing your <code class="code" id="-mh1nfr_32">OkHttpClient</code> instance to the <code class="code" id="-mh1nfr_33">ApolloClient.Builder</code>:</p><div class="code-block" data-lang="java">
+</div><p id="-x9dr6o_31">If you already have implemented OkHttp interceptors, you can also use them by passing your <code class="code" id="-x9dr6o_32">OkHttpClient</code> instance to the <code class="code" id="-x9dr6o_33">ApolloClient.Builder</code>:</p><div class="code-block" data-lang="java">
 OkHttpClient okHttpClient = new OkHttpClient.Builder()
   .okHttpClient(myOkHttpClient)
   .build();
-</div></section></section><section class="chapter"><h2 id="rxjava-extensions" data-toc="rxjava-extensions">RxJava extensions</h2><p id="-mh1nfr_35">If your project uses RxJava, you can use the RxJava extensions with the Java runtime.</p><p id="-mh1nfr_36">To do so, add the <code class="code" id="-mh1nfr_37">com.apollographql.java:rx2</code> or <code class="code" id="-mh1nfr_38">com.apollographql.java:rx3</code> dependency to your project:</p><div class="code-block" data-lang="kotlin">
+</div></section></section><section class="chapter"><h2 id="rxjava-extensions" data-toc="rxjava-extensions">RxJava extensions</h2><p id="-x9dr6o_35">If your project uses RxJava, you can use the RxJava extensions with the Java runtime.</p><p id="-x9dr6o_36">To do so, add the <code class="code" id="-x9dr6o_37">com.apollographql.java:rx2</code> or <code class="code" id="-x9dr6o_38">com.apollographql.java:rx3</code> dependency to your project:</p><div class="code-block" data-lang="kotlin">
 dependencies {
   // ...
 
@@ -109,7 +109,7 @@ dependencies {
   // For RxJava 3
   implementation(&quot;com.apollographql.java:rx3:0.0.2&quot;)
 }
-</div><p id="-mh1nfr_40">Then use the <code class="code" id="-mh1nfr_41">Rx2Apollo</code> or <code class="code" id="-mh1nfr_42">Rx3Apollo</code> classes to execute GraphQL operations and get RxJava observables:</p><div class="code-block" data-lang="java">
+</div><p id="-x9dr6o_40">Then use the <code class="code" id="-x9dr6o_41">Rx2Apollo</code> or <code class="code" id="-x9dr6o_42">Rx3Apollo</code> classes to execute GraphQL operations and get RxJava observables:</p><div class="code-block" data-lang="java">
 import com.apollographql.java.rx3.Rx3Apollo;
 
 // (...)
