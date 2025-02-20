@@ -6,3 +6,7 @@ public class com/apollographql/java/rx3/Rx3Apollo {
 	public static fun single (Lcom/apollographql/java/client/ApolloCall;Lio/reactivex/rxjava3/core/BackpressureStrategy;)Lio/reactivex/rxjava3/core/Single;
 }
 
+public final class com/apollographql/java/rx3/VersionKt {
+	public static final field VERSION Ljava/lang/String;
+}
+

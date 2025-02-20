@@ -85,6 +85,10 @@ public abstract interface class com/apollographql/java/client/ApolloDisposable$L
 	public abstract fun onDisposed ()V
 }
 
+public final class com/apollographql/java/client/VersionKt {
+	public static final field VERSION Ljava/lang/String;
+}
+
 public abstract interface class com/apollographql/java/client/interceptor/ApolloInterceptor {
 	public abstract fun intercept (Lcom/apollographql/apollo/api/ApolloRequest;Lcom/apollographql/java/client/interceptor/ApolloInterceptorChain;Lcom/apollographql/java/client/ApolloCallback;)V
 }
