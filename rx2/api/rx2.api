@@ -6,7 +6,3 @@ public class com/apollographql/java/rx2/Rx2Apollo {
 	public static fun single (Lcom/apollographql/java/client/ApolloCall;Lio/reactivex/BackpressureStrategy;)Lio/reactivex/Single;
 }
 
-public final class com/apollographql/java/rx2/VersionKt {
-	public static final field VERSION Ljava/lang/String;
-}
-

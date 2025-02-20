@@ -5,7 +5,7 @@ plugins {
   id("org.jetbrains.kotlin.jvm")
 }
 
-librarianModule(true)
+librarianModule()
 
 dependencies {
   api(libs.rx.java2)
