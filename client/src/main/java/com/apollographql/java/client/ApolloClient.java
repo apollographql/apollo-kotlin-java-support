@@ -56,6 +56,8 @@ public class ApolloClient implements Closeable {
   private Boolean sendDocument;
   private Boolean enableAutoPersistedQueries;
   private Boolean canBeBatched;
+  private String url;
+  private Boolean ignoreUnknownKeys;
 
   private ApolloClient(
       Executor executor,
@@ -68,7 +70,9 @@ public class ApolloClient implements Closeable {
       Boolean sendApqExtensions,
       Boolean sendDocument,
       Boolean enableAutoPersistedQueries,
-      Boolean canBeBatched
+      Boolean canBeBatched,
+      String url,
+      Boolean ignoreUnknownKeys
   ) {
     this.executor = executor;
     this.interceptors = interceptors;
@@ -79,6 +83,8 @@ public class ApolloClient implements Closeable {
     this.sendDocument = sendDocument;
     this.enableAutoPersistedQueries = enableAutoPersistedQueries;
     this.canBeBatched = canBeBatched;
+    this.url = url;
+    this.ignoreUnknownKeys = ignoreUnknownKeys;
 
     networkInterceptor = new NetworkInterceptor(
         httpNetworkTransport,
@@ -127,6 +133,17 @@ public class ApolloClient implements Closeable {
     } else if (canBeBatched != null) {
       requestBuilder.addHttpHeader(ExecutionOptions.CAN_BE_BATCHED, canBeBatched.toString());
     }
+    if (apolloRequest.getUrl() != null) {
+      requestBuilder.url(apolloRequest.getUrl());
+    } else if (url != null) {
+      requestBuilder.url(url);
+    }
+    if (apolloRequest.getIgnoreUnknownKeys() != null) {
+      requestBuilder.ignoreUnknownKeys(apolloRequest.getIgnoreUnknownKeys());
+    } else if (ignoreUnknownKeys != null) {
+      requestBuilder.ignoreUnknownKeys(ignoreUnknownKeys);
+    }
+
     DefaultApolloDisposable disposable = new DefaultApolloDisposable();
     ArrayList<ApolloInterceptor> interceptors = new ArrayList<>(this.interceptors);
     interceptors.add(networkInterceptor);
@@ -189,6 +206,8 @@ public class ApolloClient implements Closeable {
     private Boolean canBeBatched;
     private Boolean httpExposeErrorBody;
     private Boolean retryOnError;
+    private String url;
+    private Boolean ignoreUnknownKeys;
 
     public Builder() {
     }
@@ -453,7 +472,9 @@ public class ApolloClient implements Closeable {
           sendApqExtensions,
           sendDocument,
           enableAutoPersistedQueries,
-          canBeBatched
+          canBeBatched,
+          url,
+          ignoreUnknownKeys
       );
     }
 
@@ -573,6 +594,30 @@ public class ApolloClient implements Closeable {
     @Override public Builder canBeBatched(@Nullable Boolean canBeBatched) {
       this.canBeBatched = canBeBatched;
       return this;
+    }
+
+    @Override
+    public Builder url(@Nullable String s) {
+      this.url = url;
+      return this;
+    }
+
+    @Override
+    public Builder ignoreUnknownKeys(@Nullable Boolean ignoreUnknownKeys) {
+      this.ignoreUnknownKeys = ignoreUnknownKeys;
+      return this;
+    }
+
+    @Nullable
+    @Override
+    public String getUrl() {
+      return url;
+    }
+
+    @Nullable
+    @Override
+    public Boolean getIgnoreUnknownKeys() {
+      return ignoreUnknownKeys;
     }
   }
 

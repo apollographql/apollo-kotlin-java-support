@@ -26,6 +26,8 @@ public class DefaultApolloCall<D extends Operation.Data> implements ApolloCall<D
   private Boolean enableAutoPersistedQueries;
   private Boolean canBeBatched;
   private Boolean retryOnError;
+  private String url;
+  private Boolean ignoreUnknownKeys;
 
   public DefaultApolloCall(ApolloClient apolloClient, Operation<D> operation) {
     this.apolloClient = apolloClient;
@@ -126,5 +128,29 @@ public class DefaultApolloCall<D extends Operation.Data> implements ApolloCall<D
     throw new IllegalStateException("Not supported yet");
     //this.retryOnError = retryOnError;
     //return this;
+  }
+
+  @Override
+  public ApolloCall<D> url(@Nullable String s) {
+    this.url = s;
+    return this;
+  }
+
+  @Override
+  public ApolloCall<D> ignoreUnknownKeys(@Nullable Boolean ignoreUnknowKeys) {
+    this.ignoreUnknownKeys = ignoreUnknowKeys;
+    return this;
+  }
+
+  @Nullable
+  @Override
+  public String getUrl() {
+    return url;
+  }
+
+  @Nullable
+  @Override
+  public Boolean getIgnoreUnknownKeys() {
+    return getIgnoreUnknownKeys();
   }
 }
