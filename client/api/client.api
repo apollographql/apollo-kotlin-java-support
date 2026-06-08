@@ -45,8 +45,10 @@ public class com/apollographql/java/client/ApolloClient$Builder : com/apollograp
 	public fun getExecutionContext ()Lcom/apollographql/apollo/api/ExecutionContext;
 	public fun getHttpHeaders ()Ljava/util/List;
 	public fun getHttpMethod ()Lcom/apollographql/apollo/api/http/HttpMethod;
+	public fun getIgnoreUnknownKeys ()Ljava/lang/Boolean;
 	public fun getSendApqExtensions ()Ljava/lang/Boolean;
 	public fun getSendDocument ()Ljava/lang/Boolean;
+	public fun getUrl ()Ljava/lang/String;
 	public fun httpBatching (JIZ)Lcom/apollographql/java/client/ApolloClient$Builder;
 	public fun httpEngine (Lcom/apollographql/java/client/network/http/HttpEngine;)Lcom/apollographql/java/client/ApolloClient$Builder;
 	public fun httpExposeErrorBody (Z)Lcom/apollographql/java/client/ApolloClient$Builder;
@@ -56,6 +58,8 @@ public class com/apollographql/java/client/ApolloClient$Builder : com/apollograp
 	public fun httpMethod (Lcom/apollographql/apollo/api/http/HttpMethod;)Lcom/apollographql/java/client/ApolloClient$Builder;
 	public synthetic fun httpMethod (Lcom/apollographql/apollo/api/http/HttpMethod;)Ljava/lang/Object;
 	public fun httpServerUrl (Ljava/lang/String;)Lcom/apollographql/java/client/ApolloClient$Builder;
+	public fun ignoreUnknownKeys (Ljava/lang/Boolean;)Lcom/apollographql/java/client/ApolloClient$Builder;
+	public synthetic fun ignoreUnknownKeys (Ljava/lang/Boolean;)Ljava/lang/Object;
 	public fun interceptors (Ljava/util/List;)Lcom/apollographql/java/client/ApolloClient$Builder;
 	public fun networkTransport (Lcom/apollographql/java/client/network/NetworkTransport;)Lcom/apollographql/java/client/ApolloClient$Builder;
 	public fun okHttpClient (Lokhttp3/OkHttpClient;)Lcom/apollographql/java/client/ApolloClient$Builder;
@@ -66,6 +70,8 @@ public class com/apollographql/java/client/ApolloClient$Builder : com/apollograp
 	public synthetic fun sendDocument (Ljava/lang/Boolean;)Ljava/lang/Object;
 	public fun serverUrl (Ljava/lang/String;)Lcom/apollographql/java/client/ApolloClient$Builder;
 	public fun subscriptionNetworkTransport (Lcom/apollographql/java/client/network/NetworkTransport;)Lcom/apollographql/java/client/ApolloClient$Builder;
+	public fun url (Ljava/lang/String;)Lcom/apollographql/java/client/ApolloClient$Builder;
+	public synthetic fun url (Ljava/lang/String;)Ljava/lang/Object;
 	public fun webSocketFactory (Lokhttp3/WebSocket$Factory;)Lcom/apollographql/java/client/ApolloClient$Builder;
 	public fun webSocketServerUrl (Ljava/lang/String;)Lcom/apollographql/java/client/ApolloClient$Builder;
 	public fun wsHeaders (Ljava/util/List;)Lcom/apollographql/java/client/ApolloClient$Builder;
@@ -130,18 +136,24 @@ public class com/apollographql/java/client/internal/DefaultApolloCall : com/apol
 	public fun getExecutionContext ()Lcom/apollographql/apollo/api/ExecutionContext;
 	public fun getHttpHeaders ()Ljava/util/List;
 	public fun getHttpMethod ()Lcom/apollographql/apollo/api/http/HttpMethod;
+	public fun getIgnoreUnknownKeys ()Ljava/lang/Boolean;
 	public fun getRetryOnError ()Ljava/lang/Boolean;
 	public fun getSendApqExtensions ()Ljava/lang/Boolean;
 	public fun getSendDocument ()Ljava/lang/Boolean;
+	public fun getUrl ()Ljava/lang/String;
 	public fun httpHeaders (Ljava/util/List;)Lcom/apollographql/java/client/ApolloCall;
 	public synthetic fun httpHeaders (Ljava/util/List;)Ljava/lang/Object;
 	public fun httpMethod (Lcom/apollographql/apollo/api/http/HttpMethod;)Lcom/apollographql/java/client/ApolloCall;
 	public synthetic fun httpMethod (Lcom/apollographql/apollo/api/http/HttpMethod;)Ljava/lang/Object;
+	public fun ignoreUnknownKeys (Ljava/lang/Boolean;)Lcom/apollographql/java/client/ApolloCall;
+	public synthetic fun ignoreUnknownKeys (Ljava/lang/Boolean;)Ljava/lang/Object;
 	public fun retryOnError (Ljava/lang/Boolean;)Lcom/apollographql/java/client/ApolloCall;
 	public fun sendApqExtensions (Ljava/lang/Boolean;)Lcom/apollographql/java/client/ApolloCall;
 	public synthetic fun sendApqExtensions (Ljava/lang/Boolean;)Ljava/lang/Object;
 	public fun sendDocument (Ljava/lang/Boolean;)Lcom/apollographql/java/client/ApolloCall;
 	public synthetic fun sendDocument (Ljava/lang/Boolean;)Ljava/lang/Object;
+	public fun url (Ljava/lang/String;)Lcom/apollographql/java/client/ApolloCall;
+	public synthetic fun url (Ljava/lang/String;)Ljava/lang/Object;
 }
 
 public class com/apollographql/java/client/internal/DefaultApolloDisposable : com/apollographql/java/client/ApolloDisposable {
