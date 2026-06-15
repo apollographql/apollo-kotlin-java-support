@@ -2,6 +2,11 @@ pluginManagement {
   listOf(repositories, dependencyResolutionManagement.repositories).forEach {
     it.apply {
       mavenCentral()
+      maven("https://storage.googleapis.com/apollo-previews/m2/") {
+        content {
+          includeGroup("com.apollographql.apollo")
+        }
+      }
     }
   }
 }

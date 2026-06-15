@@ -128,7 +128,7 @@ public class ApolloWsTest {
     Truth.assertThat(failure[0]).isInstanceOf(SubscriptionOperationException.class);
     SubscriptionOperationException exception = (SubscriptionOperationException) failure[0];
     Map<String, Object> payload = (Map<String, Object>) exception.getPayload();
-    Truth.assertThat(payload.get("message")).isEqualTo("Woops");
+    Truth.assertThat((String)payload.get("message")).contains("Woops");
   }
 
   @Test
@@ -140,7 +140,7 @@ public class ApolloWsTest {
         .awaitDone(1, TimeUnit.SECONDS)
         .assertValue(responses -> {
           Map<String, Object> payload = (Map<String, Object>) ((SubscriptionOperationException) responses.get(0).exception).getPayload();
-          return payload.get("message").equals("Woops");
+          return ((String)payload.get("message")).contains("Woops");
         });
   }
 

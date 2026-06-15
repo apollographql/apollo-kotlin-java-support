@@ -10,6 +10,11 @@ pluginManagement {
         includeModule("com.gradleup.nmcp", "nmcp-tasks")
       }
     }
+    it.maven("https://storage.googleapis.com/apollo-previews/m2/") {
+      content {
+        includeGroup("com.apollographql.apollo")
+      }
+    }
   }
 }
 
