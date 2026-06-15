@@ -11,7 +11,7 @@ apollo-execution-runtime = { group = "com.apollographql.execution", name = "apol
 apollo-mockserver = "com.apollographql.mockserver:apollo-mockserver:0.0.1"
 rx-java2 = "io.reactivex.rxjava2:rxjava:2.2.21"
 rx-java3 = "io.reactivex.rxjava3:rxjava:3.1.6"
-guava-jre = "com.google.guava:guava:31.1-jre"
+guava-jre = "com.google.guava:guava:32.0.0-android"
 okhttp = "com.squareup.okhttp3:okhttp:4.11.0"
 atomicfu-library = "org.jetbrains.kotlinx:atomicfu:0.24.0"
 http4k-bom = "org.http4k:http4k-bom:5.8.0.0"
