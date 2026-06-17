@@ -1,14 +1,14 @@
 [versions]
 kotlin-plugin = "2.0.0"
-apollo = "4.0.1"
-apollo-execution = "0.0.2"
+apollo = "4.4.3"
+apollo-execution = "0.1.2"
 
 [libraries]
 librarian = "com.gradleup.librarian:core:0.0.3"
 kgp = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin-plugin" }
 apollo-api = { group = "com.apollographql.apollo", name = "apollo-api", version.ref = "apollo" }
 apollo-execution-runtime = { group = "com.apollographql.execution", name = "apollo-execution-runtime", version.ref = "apollo-execution" }
-apollo-mockserver = "com.apollographql.mockserver:apollo-mockserver:0.0.1"
+apollo-mockserver = "com.apollographql.mockserver:apollo-mockserver:0.3.1"
 rx-java2 = "io.reactivex.rxjava2:rxjava:2.2.21"
 rx-java3 = "io.reactivex.rxjava3:rxjava:3.1.6"
 guava-jre = "com.google.guava:guava:31.1-jre"
