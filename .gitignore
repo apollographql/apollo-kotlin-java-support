@@ -8,6 +8,7 @@
 !**/.idea/runConfigurations
 !**/.idea/scopes
 *.iml
+/tests/.idea
 
 # Generated files
 build

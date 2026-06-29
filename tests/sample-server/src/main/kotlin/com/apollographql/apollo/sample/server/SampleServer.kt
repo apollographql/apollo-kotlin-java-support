@@ -1,51 +1,36 @@
 package com.apollographql.apollo.sample.server
 
-import com.apollographql.apollo.sample.server.graphql.SubscriptionRoot
 import com.apollographql.apollo.api.ExecutionContext
-import com.apollographql.execution.ExecutableSchema
-import com.apollographql.execution.parseGetGraphQLRequest
-import com.apollographql.execution.parsePostGraphQLRequest
-import com.apollographql.execution.websocket.ConnectionInitAck
-import com.apollographql.execution.websocket.ConnectionInitError
-import com.apollographql.execution.websocket.ConnectionInitHandler
-import com.apollographql.execution.websocket.SubscriptionWebSocketHandler
-import com.apollographql.execution.websocket.WebSocketBinaryMessage
-import com.apollographql.execution.websocket.WebSocketMessage
-import com.apollographql.execution.websocket.WebSocketTextMessage
+import com.apollographql.apollo.execution.ExecutableSchema
+import com.apollographql.apollo.execution.parseAsGraphQLRequest
+import com.apollographql.apollo.sample.server.graphql.SubscriptionRoot
+import com.apollographql.execution.websocket.*
 import kotlinx.atomicfu.locks.reentrantLock
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
+import kotlinx.coroutines.runBlocking
 import okio.Buffer
 import okio.buffer
 import okio.source
 import okio.withLock
-import org.http4k.core.HttpHandler
-import org.http4k.core.MemoryBody
-import org.http4k.core.Method
-import org.http4k.core.Request
-import org.http4k.core.Response
+import org.http4k.core.*
 import org.http4k.core.Status.Companion.BAD_REQUEST
 import org.http4k.core.Status.Companion.OK
-import org.http4k.core.then
 import org.http4k.filter.CorsPolicy.Companion.UnsafeGlobalPermissive
 import org.http4k.filter.ServerFilters
 import org.http4k.routing.bind
 import org.http4k.routing.routes
+import org.http4k.routing.websocket.bind
 import org.http4k.routing.websockets
 import org.http4k.server.Jetty
 import org.http4k.server.PolyHandler
 import org.http4k.server.ServerConfig
 import org.http4k.server.asServer
-import org.http4k.websocket.Websocket
-import org.http4k.websocket.WsHandler
-import org.http4k.websocket.WsMessage
-import org.http4k.websocket.WsResponse
-import org.http4k.websocket.WsStatus
+import org.http4k.websocket.*
 import sample.server.SampleserverExecutableSchemaBuilder
 import java.io.Closeable
 import java.time.Duration
-import org.http4k.routing.ws.bind as wsBind
 
 fun ExecutableSchema(tag: String): ExecutableSchema {
   return SampleserverExecutableSchemaBuilder()
@@ -59,8 +44,8 @@ class GraphQLHttpHandler(private val executableSchema: ExecutableSchema, private
   override fun invoke(request: Request): Response {
 
     val graphQLRequestResult = when (request.method) {
-      Method.GET -> request.uri.toString().parseGetGraphQLRequest()
-      Method.POST -> request.body.stream.source().buffer().use { it.parsePostGraphQLRequest() }
+      Method.GET -> request.uri.toString().parseAsGraphQLRequest()
+      Method.POST -> request.body.stream.source().buffer().use { it.parseAsGraphQLRequest() }
       else -> error("")
     }
 
@@ -68,7 +53,9 @@ class GraphQLHttpHandler(private val executableSchema: ExecutableSchema, private
       return Response(BAD_REQUEST).body(graphQLRequestResult.exceptionOrNull()!!.message!!)
     }
 
-    val response = executableSchema.execute(graphQLRequestResult.getOrThrow(), executionContext)
+    val response = runBlocking {
+      executableSchema.execute(graphQLRequestResult.getOrThrow(), executionContext)
+    }
 
     val buffer = Buffer()
     response.serialize(buffer)
@@ -188,7 +175,7 @@ fun ApolloWebsocketHandler(executableSchema: ExecutableSchema, webSocketRegistry
 private fun WebSocketMessage.toWsMessage(): WsMessage {
   return when (this) {
     is WebSocketBinaryMessage -> {
-      WsMessage(MemoryBody(data))
+      WsMessage(data)
     }
 
     is WebSocketTextMessage -> {
@@ -200,7 +187,7 @@ private fun WebSocketMessage.toWsMessage(): WsMessage {
 fun AppHandler(tag: String): PolyHandler {
   val executableSchema = ExecutableSchema(tag)
   val forceClose = WebSocketRegistry()
-  val ws = websockets("/subscriptions" wsBind ApolloWebsocketHandler(executableSchema, webSocketRegistry = forceClose))
+  val ws = websockets("/subscriptions" bind ApolloWebsocketHandler(executableSchema, webSocketRegistry = forceClose))
 
   val http = ServerFilters.CatchAll {
     it.printStackTrace()
