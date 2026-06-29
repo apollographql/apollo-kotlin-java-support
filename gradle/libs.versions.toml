@@ -24,7 +24,7 @@ kotlinx-coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.11.0"
 
 [plugins]
 kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin-plugin" }
-librarian = { id = "com.gradleup.librarian", version = "0.2.2-SNAPSHOT-7f4d4f5f59d9cbba4c8fc717af3ec9fde178ff12" }
+librarian = { id = "com.gradleup.librarian", version = "0.2.2-SNAPSHOT-28e0ecde1aebd3f17f838e056afd44eddbce2544" }
 apollo = { id = "com.apollographql.apollo", version.ref = "apollo" }
 ksp = { id = "com.google.devtools.ksp", version = "2.3.9" }
 apollo-execution = { id = "com.apollographql.execution", version.ref = "apollo-execution" }
