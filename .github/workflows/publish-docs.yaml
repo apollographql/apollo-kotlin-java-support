@@ -28,7 +28,7 @@ jobs:
 
       - name: Prepare static content
         run: |
-          ./gradlew dokkatooGeneratePublicationHtml
+          ./gradlew dokkaGeneratePublicationHtml
           mkdir -p build/static
           cp -rf build/dokka/html build/static/kdoc
           unzip artifacts/webHelpDOC2-all.zip -d build/static
