@@ -12,7 +12,7 @@ apollo-mockserver = "com.apollographql.mockserver:apollo-mockserver:0.3.1"
 rx-java2 = "io.reactivex.rxjava2:rxjava:2.2.21"
 rx-java3 = "io.reactivex.rxjava3:rxjava:3.1.12"
 guava-jre = "com.google.guava:guava:33.6.0-jre"
-okhttp = "com.squareup.okhttp3:okhttp:5.3.2"
+okhttp = "com.squareup.okhttp3:okhttp:5.4.0"
 atomicfu-library = "org.jetbrains.kotlinx:atomicfu:0.33.0"
 http4k-bom = "org.http4k:http4k-bom:6.53.0.0"
 http4k-core = { module = "org.http4k:http4k-core" }
